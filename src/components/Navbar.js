@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from './burger-logo.png';
+
 
 export default function Navbar() {
     return (
@@ -9,10 +11,10 @@ export default function Navbar() {
                         <img src={logo} alt="Burger Builder" width="50" height="40" />
                     </a>
                     <ul className="navbar-nav ml-auto" style={{ display: 'flex', flexDirection: 'row' }}>
-                        <li className="nav-item" style={{ display: 'inline-block', width: 'auto', margin: '0 10px' }}>
-                            <a className="nav-link" href="#" style={{ color: 'white' }}>Burger Builder</a>
+                        <li className="nav-item" style={{ display: 'block', width: 'auto', margin: '0 10px', padding: '0 ' }}>
+                            <a className="nav-link" href="#" style={{ color: 'white', cursor: 'pointer' }}>Burger Builder</a>
                         </li>
-                        <li className="nav-item" style={{ display: 'inline-block', width: 'auto', margin: '0 10px' }}>
+                        <li className="nav-item" style={{ display: 'block', width: 'auto', margin: '0 ', padding: '0 ' }}>
                             <a className="nav-link" href="#" style={{ color: 'white' }}>Login</a>
                         </li>
                     </ul>

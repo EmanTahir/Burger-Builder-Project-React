@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: lightseagreen;
+  display: block;
+  transform: scaleX(0);
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  
+}
+a:hover {
+  background-color: rgb(233, 147, 85);
+}
